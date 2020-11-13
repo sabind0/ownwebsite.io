@@ -18,17 +18,17 @@ font-size: 17px;
 }
 
 nav ul li{ 
-   
     list-style-type: none;  
 }
 nav ul{
     margin-left:30vw;
+   
 }
 .home-image{
-background-image: url(images/home.jpeg);
-height:115%;
+background-image: url(images/home-picture.jpg);
+height:100%;
 background-position:top;
 background-repeat:no-repeat;
-background-size: contain;
-margin-top: 
+background-size:contain;
 }
+
