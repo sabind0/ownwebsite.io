@@ -1,0 +1,34 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav ul li a {
+    text-decoration: none;
+}
+nav a{
+ float: left;
+ display: block;
+ position: relative;
+ margin-left: 53px;
+ margin-top: 10px;
+text-decoration: none;
+font-size: 17px;
+
+}
+
+nav ul li{ 
+   
+    list-style-type: none;  
+}
+nav ul{
+    margin-left:30vw;
+}
+.home-image{
+background-image: url(images/home.jpeg);
+height:115%;
+background-position:top;
+background-repeat:no-repeat;
+background-size: contain;
+margin-top: 
+}
