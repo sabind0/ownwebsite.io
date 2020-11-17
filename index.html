@@ -4,20 +4,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabind Aryal</title>
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css.css">
 <body>
- <nav class="nav-class">
+    
+<nav class="nav-bar">
+    
+   
         <ul>
+           
             <li><a href="#">Home</a></li>
-            <li><a href="#"> About</a></li>
-            <li><a href="#">Works</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Resume</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
- </nav>
- <header>
-     <div class="home-image"></div>
- </header>
-<h1></h1>
+   
+</nav>
+<div class="button">
+    <i class="fa fa-bars"></i>
+</div>
+  <header>
+      <div class="home-image"><h1></h1></div>
+  </header>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.button').click(function(){
+        $('nav').toggleClass('active')
+    }) 
+ });
+
+    
+
+</script>
 </body>
 </html>
