@@ -4,14 +4,13 @@
     box-sizing: border-box;
 }
 .nav-bar{
-    background: crimson;
+    background: rgb(31, 31, 31);
     height:50px;
 }
 .nav-bar ul a{
 text-decoration: none;  
-text-decoration: none;
-text-decoration: none;  
-color: black;  
+
+color: rgb(255, 255, 255);  
 font-size: 20px;
 border-radius: 5px;
 padding: 5px 13px 5px 13px;
@@ -41,22 +40,33 @@ list-style-type: none;
 /*nav responsive only*/
 @media (max-width:600px){
 .nav-bar{
+    z-index: 1;
     top: 20px;
     width: 100%;
     position: absolute;
     height: 100vh;
-    background: crimson;
+    background:  rgb(31, 31, 31);
     border-radius: 1 auto;
 transition: 0.5s;
 
 }
 .button{
     display: block;
-    background: crimson;
+    background: rgb(31, 31, 31);
     height: 50px;
+    position: absolute;
+    z-index: 1;
+}
+.button i{
+  padding-right:100vh ;
+    margin-top: 10px;
+    font-size: 30px;
+    color: white;
+    margin-left: 20px;
 }
 .nav-bar{
    left: -600px;
+   margin-top: -3vh;
 }
 .nav-bar.active{
     left:0;
@@ -74,7 +84,9 @@ transition: 0.5s;
     text-align:center;
     margin-right: 20px;
 }
-}
+}  
+/* nab bar responsive finised*/
+
 .home-image{
     height: 100%;
     background: url(images/home-picture.jpg);
@@ -83,3 +95,9 @@ transition: 0.5s;
     background-repeat: no-repeat;
     
 }
+ /*home text*/
+.home-image .text{
+display: block;
+text-align: center;
+margin-left: -300px;
+ }
