@@ -7,28 +7,43 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css.css">
 <body>
-    
-<nav class="nav-bar">
-    
-   
-        <ul>
-           
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+<div id="top"><!--this is for click for home--></div>
+<div class="sticky"><!-- this is for sticky nab var in respondive mode-->
+   <nav class="nav-bar" >
+     <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#second">About</a></li>
             <li><a href="#">Resume</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-   
-</nav>
-<div class="button">
+    </nav>
+    <div class="button">
     <i class="fa fa-bars"></i>
+    </div>
 </div>
-  <header>
-      <div class="home-image"><div class="text"><h1>Hello,<br>I am <br>Sabind Aryal.
-      </h1></div></div>
-  </header>
+<header id="header">
+  
+    <div class="home-image"> </div>
+    <div class="text">
+        <h1>Hello, I am Sabind Aryal.</h1>
+   </div>
+   <div class="animation-text">
+       <h2>I am <span class="jstext"></span></h2>
+   </div>
+   <!--down arrow-->
+
+<div class="down-arrow">
+  <a href="#second">  <p>></p>
+    <p>></p>
+    <p>></p></a>
+   
+</div>
+<div class="second" id="second"></div>
+</header>
+<!-- about section start-->
+
   <script
   src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript">
