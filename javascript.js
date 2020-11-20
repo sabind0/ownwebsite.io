@@ -5,8 +5,8 @@ $(document).ready(function(){
     });
 var typed = new Typed(".typing", {
         strings: ["Student", "Frontend-Developer", "Graphic Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
+        typeSpeed: 50,
+        backSpeed: 50,
         loop: true,
     });
  });
