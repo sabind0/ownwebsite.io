@@ -3,16 +3,16 @@
     margin: 0px;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
+
 .nav-bar{
-  
-    height:50px;
-    
+    height:px;
+   
 }
-.sticky{
-    position: sticky;
-    top:0px;
-    z-index: 1;
-}
+
+
 .nav-bar ul a{
 text-decoration: none;  
 font-weight: 900;
@@ -33,10 +33,28 @@ list-style-type: none;
     justify-content: center;
 
 }
+.here.sticky{
+    position:sticky;
+    top:0px;
+    z-index: 1;
+}
+.here.sticky{
+    
+     background:rebeccapurple;
+
+}
+
 .nav-bar ul li{
 
     margin-top: 10px;
     margin-bottom: 10px;
+
+}
+.here.sticky{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 
 }
 .button{
@@ -46,7 +64,7 @@ list-style-type: none;
 /*nav responsive only*/
 @media (max-width:600px){
 .nav-bar{
-
+z-index: 1;
     top: -20px;
     width: 100%;
     position:absolute;
@@ -56,12 +74,10 @@ list-style-type: none;
 transition: 0.5s;
 
 }
-.sticky{
-    position: sticky;
-    top:0;
-    z-index: 1;
-}
+
+
 .button{
+    z-index: 1;
     border-radius: 20px;
     display: block;
     background: rgb(31, 31, 31);
@@ -101,7 +117,7 @@ transition: 0.5s;
 
 .home-image{
 margin-top: -50px;
-    height: 110vh;
+    height: 100vh;
     background: url(images/home-picture.jpg);
     background-position:left;
     background-size: cover;
@@ -126,26 +142,30 @@ position: absolute;
           left: 50%;
           transform: translate(-50%, -50%);
  }
-
+.animation-text .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+    
+     z-index: -1;
+}
+.animation-text .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
  /*text finished now  i have to css this*/
   /*arrow down button*/
   .down-arrow{
-    
+  
     position: absolute;
     top: 90%;
     left: 50%;
     font-size: 30px;
- background: cadetblue;
-}
 
-.down-arrow p{
-    transform: rotate(90deg);
-    line-height: 12px;
-    font-size: 30px;
-letter-spacing: 3px;
 }
-.down-arrow a{
-    text-decoration: none;
+.down-arrow i{
+    color:white;
+   
+ 
 }
 
 /*about section start*/
@@ -444,6 +464,6 @@ justify-content: center;
     background: rgb(20, 147, 220);
 }
 .copywrite-section{
-    text-align: center;
+    text-align:center;
     margin-top: 30px;
 }

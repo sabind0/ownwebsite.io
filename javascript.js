@@ -9,4 +9,16 @@ var typed = new Typed(".typing", {
         backSpeed: 50,
         loop: true,
     });
+
+    /*nav bar*/
+    $(window).scroll(function(){
+        // sticky navbar on scroll script
+        if(this.scrollY >100){
+            $('.here').addClass("sticky");
+        }else{
+            $('.here').removeClass("sticky");
+        }
+        
+        
+    });
  });
