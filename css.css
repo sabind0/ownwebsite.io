@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Amita&family=Assistant&family=Carme&family=Courgette&family=Finger+Paint&family=Lato:ital@1&family=Lemonada&family=Nixie+One&family=Overpass:wght@300&family=Pacifico&family=Wellfleet&display=swap');
 *{
     padding: 0px;
     margin: 0px;
@@ -7,10 +8,6 @@ html{
     scroll-behavior: smooth;
 }
 
-.nav-bar{
-    height:px;
-   
-}
 
 
 .nav-bar ul a{
@@ -20,6 +17,7 @@ color: rgb(255, 255, 255);
 font-size: 20px;
 border-radius: 5px;
 padding: 5px 13px 5px 13px;
+font-family: 'Lato', sans-serif;
 
 }
 .nav-bar ul a:hover{
@@ -37,10 +35,12 @@ list-style-type: none;
     position:sticky;
     top:0px;
     z-index: 1;
+    transition: 0.3s;
+
 }
 .here.sticky{
     
-     background:rebeccapurple;
+     background:rgb(78, 76, 80);
 
 }
 
@@ -53,7 +53,7 @@ list-style-type: none;
 .here.sticky{
 
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 
 
 }
@@ -136,21 +136,31 @@ position: absolute;
   transform: translate(-50%, -50%);
  
  }
+.text h1{ 
+    font-family: 'Amita', cursive;
+    font-size: 40px; 
+    color: black;
+  -webkit-text-fill-color:transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(241, 241, 241);
+}
  .animation-text{
      position: absolute;
+     font-size: 40px;
+     margin: 5px 0;
+
           top: 70%;
           left: 50%;
           transform: translate(-50%, -50%);
  }
-.animation-text .text-3{
-    font-size: 40px;
-    margin: 5px 0;
-    
-     z-index: -1;
-}
-.animation-text .text-3 span{
+ .animation-text:first-child{
+     background-color: rebeccapurple;
+ }
+.animation-text span{
     color: crimson;
-    font-weight: 500;
+    font-weight: 900;
+    background-color: ivory;
+    border-radius: 5px;
 }
  /*text finished now  i have to css this*/
   /*arrow down button*/
@@ -466,4 +476,10 @@ justify-content: center;
 .copywrite-section{
     text-align:center;
     margin-top: 30px;
+}
+.copywrite-section h1{
+    font-family: 'Finger Paint', cursive;
+}
+.copywrite-section h1 span{
+    color:rgb(255, 255, 255);
 }
