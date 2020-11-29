@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Amita&family=Assistant&family=Carme&family=Courgette&family=Finger+Paint&family=Lato:ital@1&family=Lemonada&family=Nixie+One&family=Overpass:wght@300&family=Pacifico&family=Wellfleet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
 *{
     padding: 0px;
     margin: 0px;
@@ -12,16 +13,16 @@ html{
 
 .nav-bar ul a{
 text-decoration: none;  
-font-weight: 900;
+font-weight: 800;
 color: rgb(255, 255, 255);  
-font-size: 20px;
+font-size: 25px;
 border-radius: 5px;
 padding: 5px 13px 5px 13px;
-font-family: 'Lato', sans-serif;
+font-family:  'Wellfleet', cursive;
 
 }
 .nav-bar ul a:hover{
-background-color: rgb(231, 170, 182);
+background-color: rgb(17, 235, 235);
 }
 .nav-bar ul li{
 list-style-type: none;
@@ -40,7 +41,7 @@ list-style-type: none;
 }
 .here.sticky{
     
-     background:rgb(78, 76, 80);
+     background:rgba(4, 241, 142, 0.767);
 
 }
 
@@ -118,63 +119,75 @@ transition: 0.5s;
 .home-image{
 margin-top: -50px;
     height: 100vh;
-    background: url(images/home-picture.jpg);
+    background: linear-gradient(to bottom, rgba(6, 212, 219, 0.795), rgba(9, 226, 241, 0.527)), url(images/home-picture.jpg);
     background-position:left;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
     
 }
-header{
-    position: static;;
-    z-index:1;
-}
-.black::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-color: black;
-	opacity: .7;
-	z-index:-1;
-}
+
+
 
 
  /*home text*/
 .text {
+    cursor: pointer;
 position: absolute;
   top: 40%;
-  left: 50%;
+  left: 45%;
   transform: translate(-50%, -50%);
  
  }
 .text h1{ 
-    font-family: 'Amita', cursive;
-    font-size: 40px; 
-    color: black;
-  -webkit-text-fill-color:transparent; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: rgb(241, 241, 241);
+ 
+
+    font-family: 'Assistant', sans-serif;
+     font-size: 60px;
+   
+  
 }
+.text .hello{
+ color:rgb(252, 79, 10);
+}
+.s, .a ,.b, .i,
+.n,.d,.aa,.r,
+.y,.aaa,.l,.dot{
+    color:rgb(255, 255, 255);
+
+}
+
+.s:hover, .a:hover ,.b:hover, .i:hover,
+.n:hover,.d:hover,.aa:hover,.r:hover,
+.y:hover,.aaa:hover,.l:hover,.dot:hover{
+    -webkit-text-fill-color:transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(224, 224, 224);
+    font-size: 60px;
+}
+.animation-text span:hover{
+    font-size: 30px;
+    
+}
+
  .animation-text{
+    cursor: pointer;
      position: absolute;
-     font-size: 40px;
+     font-family: 'Assistant', sans-serif;
+    
      margin: 5px 0;
 
-          top: 70%;
+          top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
  }
- .animation-text:first-child{
-     background-color: rebeccapurple;
- }
-.animation-text span{
+ 
+.animation-text h2 span{
     color: crimson;
     font-weight: 900;
     background-color: ivory;
     border-radius: 5px;
+    font-family:  'Wellfleet', cursive;
 }
  /*text finished now  i have to css this*/
   /*arrow down button*/
@@ -192,29 +205,74 @@ position: absolute;
    
  
 }
+.down-arrow {
+	-moz-animation: jump 3s infinite;
+	-webkit-animation: jump 3s infinite;
+	animation: jump 2.5s infinite;
+}
+@-moz-keyframes jump {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes jump {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes jump {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
 
 /*about section start*/
-.about-container{
-   
-    height:50%;
-   background-color: rgb(45, 45, 46);
-}
-.about-container-flex{
-   display:flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: center;
-}
+
 .con1{
- 
-   
-    text-align: center;
-    padding-top: 30px;
-   padding-bottom: 100px;
-    background-color: lightblue;
+  text-align: center;
+    padding-top: 60px;
+    letter-spacing: 2px;
+   padding-bottom: 60px;
+    background-color: rgb(255, 255, 255);
 }
 .con1 h1{
-   color: rgb(35, 225, 231);
+    font-family: 'Piedra', cursive;
+    font-weight: 500;
+   color: rgb(0, 12, 12);
+   font-size: 30px;
 }
 .con1::before{
     content: "";
@@ -223,27 +281,39 @@ position: absolute;
     height: 5px;
     border-top: 3px solid rgb(241, 29, 29);
     bottom: 0px;
-    transform: translate(-90px,155px);
-    
-    color: rgb(128, 0, 255);
+    transform: translate(-90px,124px);
     margin-top: 30px;
 }
 .con1::after{
+    font-family: 'Overpass', sans-serif;
+text-align:center;
     content: "Who i am";
     position: absolute;
     transform: translate(-30px,-3px);
-    background-color: white;
+    background-color: rgb(5, 238, 255);
 }
+.about-container-flex{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: rgb(29, 28, 28);
+    height: 40%;
+ }
 .con2 img{
     height: 200px;
     border-radius: 50%;
-   
-  
 }
 .con2{
-  color: #ddd;
+    padding: 50px;
+    margin-right:50px ;
 }
 
+.con3 h1{
+ text-align: left;
+ margin-top:100px;
+   
+}
 
 .con3{
 padding-left: 40px;
@@ -277,7 +347,7 @@ padding-left: 40px;
 .edu-top{
     
  margin-left: 40px;
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
     
 }
 .edu-top::after{
