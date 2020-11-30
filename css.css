@@ -299,14 +299,18 @@ text-align:center;
     justify-content: center;
     background-color: rgb(29, 28, 28);
     height: 40%;
+    color:white;
  }
 .con2 img{
     height: 200px;
     border-radius: 50%;
 }
 .con2{
-    padding: 50px;
-    margin-right:50px ;
+    position:relative;
+    padding-left: 40px;
+    right:50px;
+    top:50px;
+    
 }
 
 .con3 h1{
@@ -316,81 +320,119 @@ text-align:center;
 }
 
 .con3{
-padding-left: 40px;
+margin-left: 100px;
+
+
 }
 
 .education-section{
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
     flex-direction: row;
     height: 30%;
-    background: royalblue;
+    
+    background: rgb(13, 223, 24);
+    margin-bottom:50px;
    
 }
 .education-title{
-   margin-right: 30px;
-   
+    position:relative;
+    right:70px;
    
 }
 .education-title h1{
-    padding-top: 30px;
+    padding-top: 45px;
+    font-family:  'Wellfleet', cursive;
 }
-.education-title::after{
+.education-title::before{
     content:"";
     position:absolute;
     height: 3px;
-    transform: translateX(-1%);
-    width: 200px;
+   left:-110px;
+   top:85px;
+    width: 300px;
     border-top: 3px solid rgb(241, 29, 29);
 }
-.edu-top{
-    
- margin-left: 40px;
-    background-color: rgb(255, 255, 255);
+.education-title::after{
+    content: "don't judge on basis of education";
+height: 4px;
+position: relative;
+
+right:70px;
+background-color: rgb(253, 253, 253);
+font-family: 'Overpass', sans-serif;
+}
+.edu-head{
+    margin-right:45px;
+    margin-top: 50px;
+   
     
 }
-.edu-top::after{
-    content: "do not judge me on basis of my education";
-height: 4px;
+.edu-head h2{
+    
+    font-family: 'Carme', sans-serif;
+}
+.edu-head h3{
+    color:white;
+    font-family:'Overpass', sans-serif;
 }
 /*skill section start*/
 
 .skill-section{
     background-attachment: fixed; 
-background-color: turquoise;
+ background-color:rgb(255, 84, 4);
 display: flex;
 flex-direction:row;
 flex-wrap: nowrap;
 height: 50%;
 justify-content:center;
-background-position: center;
+
 }
 
 .skill-title{
-margin-left: 30px;
-   color: #ddd;
+    margin-top:40px;
+margin-left: -130px;
+
+font-family:  'Wellfleet', cursive;
+   color: rgb(255, 255, 255);
    
 }
 .skill-title::after{
-    content:"";
-    position:absolute;
+    content:"what i know";
+  background: rgb(48, 243, 9);
+position:relative;
+
+
     height: 3px;
     transform: translateX(-1%);
+    
+}
+.skill-title:before{
+    content: "";
+    position:absolute;
+   top:40px;
+   right:-30px;
     width: 200px;
-    border-top: 3px solid rgb(241, 29, 29);
+    border-top: 3px solid rgb(255, 255, 255);
 }
 .skill-detail{
-  width: 50%;
-   margin-left: 200px;
+    margin-top:40px;
+   background: wheat;
+  
+  width: 40%;
+  padding-left:100px;
+  
+  
    
 }
 .skill-bar{
    padding-top: 4px;
    padding-bottom: 4px;
   
-   width: 40%;
-    background-color: #ddd;
+
+    background-color: rgb(241, 28, 28);
 }
 .html{
  height: 10px;
