@@ -324,36 +324,40 @@ margin-left: 100px;
 
 
 }
-
-.education-section{
+/*resume
+ section 
+ */
+.resume{
     margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    height: 30%;
-    
-    background: rgb(13, 223, 24);
-    margin-bottom:50px;
+    display:flex;
    
+   flex-direction: column;
+   height: 100%;
+  background: linear-gradient(red,yellow,white);
+}
+.education-section{
+display:flex;
+justify-content: center;
+flex-direction: row;
+left:120px;
+position: relative;;
+
 }
 .education-title{
     position:relative;
-    right:70px;
-   
+    margin-right:70px;  
 }
 .education-title h1{
-    padding-top: 45px;
-    font-family:  'Wellfleet', cursive;
+   font-family:  'Wellfleet', cursive;
 }
 .education-title::before{
     content:"";
     position:absolute;
     height: 3px;
    left:-110px;
-   top:85px;
+   top:38px;
     width: 300px;
-    border-top: 3px solid rgb(241, 29, 29);
+    border-top: 3px solid rgb(228, 228, 228);
 }
 .education-title::after{
     content: "don't judge on basis of education";
@@ -364,118 +368,125 @@ right:70px;
 background-color: rgb(253, 253, 253);
 font-family: 'Overpass', sans-serif;
 }
-.edu-head{
-    margin-right:45px;
-    margin-top: 50px;
-   
-    
+.school-name{
+    margin-top:8px;
+margin-right:450px;
+  
 }
-.edu-head h2{
+.school-name h2{
     
     font-family: 'Carme', sans-serif;
 }
-.edu-head h3{
+.school-name h3{
     color:white;
     font-family:'Overpass', sans-serif;
 }
+.color{
+    height: 30px;
+    background-color: white;
+    width: 100%;
+    margin-top:40px ;
+}
 /*skill section start*/
 
-.skill-section{
-    background-attachment: fixed; 
- background-color:rgb(255, 84, 4);
-display: flex;
-flex-direction:row;
-flex-wrap: nowrap;
-height: 50%;
-justify-content:center;
-
+.skills{
+    display:flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+    position: relative;
+right:70px;
 }
-
 .skill-title{
-    margin-top:40px;
-margin-left: -130px;
-
-font-family:  'Wellfleet', cursive;
-   color: rgb(255, 255, 255);
+    margin-right: 200px;
+    position:relative; 
    
+  
+}
+.skill-title h1{
+    font-family:  'Wellfleet', cursive;
+   color: rgb(255, 255, 255);
 }
 .skill-title::after{
     content:"what i know";
   background: rgb(48, 243, 9);
 position:relative;
-
-
-    height: 3px;
-    transform: translateX(-1%);
+   height: 3px;
+   left:10px;
     
 }
 .skill-title:before{
     content: "";
-    position:absolute;
+    position: absolute;
    top:40px;
-   right:-30px;
-    width: 200px;
-    border-top: 3px solid rgb(255, 255, 255);
+  width: 200px;
+  height: 3px;
+  left:-50px;
+   background-color: white;
 }
-.skill-detail{
-    margin-top:40px;
-   background: wheat;
-  
-  width: 40%;
-  padding-left:100px;
-  
-  
-   
-}
-.skill-bar{
-   padding-top: 4px;
-   padding-bottom: 4px;
-  
+.skill-detail li{
+    list-style: none;
+    }
+    .skill-detail{
+     
+        cursor: pointer;
+        width: 20%;
+    }
+    .skill-detail .bar{
+    display:block;
+    background-color: ivory;
+     border: 1px solid green;
+     overflow: hidden;
+     
+     border-radius: 2px;
+    
+    }
+    .skill-detail .bar span{
+     
+      height:20px;
+       float: left;
+        
+    
+    }
+    .html{
+        width:50%;
+    background-color:red;
+    
+    
+    }
+    
+    .css{
+        width:90%;
+        background-color:red;
+    }
+    .js{
+        width: 40%;
+        background-color:red;
+    }
+    .git{
+        width:20%;
+        background-color:red;
+    }
+    
+    .seo{
+        width:70%;
+        background-color:red;
+    }
+    .gd{
+        width: 55%;
+        background-color:red;
+    }
 
-    background-color: rgb(241, 28, 28);
-}
-.html{
- height: 10px;
-    background: blueviolet;
-    width: 50%;
-    text-align: right;
-}
-.css{
-    background-color:red ;
-    width: 30%;
-    text-align: right;
-    height: 10px;
-}
-.js{
-    background-color:blue ;
-    width:15% ;
-    text-align: right;
-    height:10px ;
-}
-.gd{
-    background-color: white;
-    width: 10%;
-    text-align: right;
-    height: 10px;
-}
-.git{
-    background-color:yellow ;
-    width:10% ;
-    text-align: right;
-    height: 10px;
-}
-.seo{
-    background-color: rgb(255, 123, 0);
-    width:20% ;
-    text-align: right;
-    height: 10px;
-}
 
 /*my works*/
 .work-title{
     background-color: orangered;
     text-align: center;
     padding: 20px 0px 40px 0px;
+}
+.work-title h1:before{
+    content: "here";
+
 }
 .myworks-section{
    
