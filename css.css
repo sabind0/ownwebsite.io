@@ -170,7 +170,7 @@ position: absolute;
     
 }
 
- .animation-text{
+.animation-text{
     cursor: pointer;
      position: absolute;
      font-family: 'Assistant', sans-serif;
@@ -332,15 +332,16 @@ margin-left: 100px;
     display:flex;
    
    flex-direction: column;
-   height: 100%;
-  background: linear-gradient(red,yellow,white);
+   height: 80%;
+  background: linear-gradient(rgb(0, 255, 85),rgb(0, 225, 255),white,rgba(40, 230, 15, 0.671));
 }
 .education-section{
 display:flex;
 justify-content: center;
 flex-direction: row;
 left:120px;
-position: relative;;
+
+
 
 }
 .education-title{
@@ -366,7 +367,7 @@ position: relative;
 
 right:70px;
 background-color: rgb(253, 253, 253);
-font-family: 'Overpass', sans-serif;
+font-family: 'Overpass',cursive;
 }
 .school-name{
     margin-top:8px;
@@ -375,11 +376,11 @@ margin-right:450px;
 }
 .school-name h2{
     
-    font-family: 'Carme', sans-serif;
+    font-family: 'Carme',cursive;
 }
 .school-name h3{
     color:white;
-    font-family:'Overpass', sans-serif;
+    font-family:'Overpass',cursive;
 }
 .color{
     height: 30px;
@@ -413,7 +414,8 @@ right:70px;
 position:relative;
    height: 3px;
    left:10px;
-    
+   font-family: 'Overpass',cursive;
+  
 }
 .skill-title:before{
     content: "";
@@ -449,103 +451,95 @@ position:relative;
     
     }
     .html{
-        width:50%;
-    background-color:red;
+        width:80%;
+    background-color:rgb(0, 255, 106);
     
     
     }
     
     .css{
-        width:90%;
-        background-color:red;
+        width:70%;
+        background-color:rgb(48, 213, 235);
     }
     .js{
-        width: 40%;
-        background-color:red;
+        width: 30%;
+        background-color:rgb(0, 255, 213);
     }
     .git{
         width:20%;
-        background-color:red;
+        background-color:rgb(0, 162, 255);
     }
     
     .seo{
-        width:70%;
-        background-color:red;
+        width:40%;
+        background-color:rgb(0, 255, 157);
     }
     .gd{
-        width: 55%;
-        background-color:red;
+        width: 35%;
+        background-color:rgb(0, 255, 149);
     }
 
 
 /*my works*/
 .work-title{
-    background-color: orangered;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px 0px 40px 0px;
 }
-.work-title h1:before{
-    content: "here";
-
+.work-title h1{
+    font-family:  'Wellfleet', cursive;
+}
+.work-title::after{
+    content: "some of my works";
+background-color: rgb(17, 240, 110);
+position: relative;
+font-family: 'Overpass',cursive;
 }
 .myworks-section{
    
-    background-color: purple;
+   background-color: rgb(7, 204, 96);
 }
-.work-title h1::after{
+.work-title h1::before{
     content:"";
     position:absolute;
     height: 3px;
-transform: translate(-100px,30px);
+    transform: translate(-50px,40px);
+
+background-color: rgb(14, 234, 250);
     width: 200px;
-    border-top: 3px solid rgb(241, 29, 29);
+    
 }
-
-.flex1 ,.flex2{
-    margin-top: 10px;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+.project-contianer{
+    display: grid;
+    grid-template-columns:repeat(3,400px) ;
+    grid-template-rows: repeat(2,400px);
     justify-content: center;
+    padding: 50px;
+    grid-gap: 50px 50px;
+    grid-auto-flow: row ;
+    text-align: center;
 }
+.one {
+ 
+    background: red;
 
-    
-
-.project1{
-    background-image: url(images/one.jpeg);
-    background-position: top;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 10px;
-    height: 300px;
-    width: 300px;
-    
 }
-.project2{
-    height: 300px;
-    width: 300px;
-    background-image: url(images/one.jpeg);
-    background-position:top;
-    background-size: contain;
-    background-repeat: no-repeat;
+.two{
+    background: yellow;
 }
-.project3{
-    margin-right: 10px;
-    height: 300px;
-    width: 300px;
-    background-image: url(images/one.jpeg);
-    background-position:top;
-    background-size: contain;
-    background-repeat: no-repeat;
+.three{
+    background: rgb(57, 212, 153);
 }
-.project4{
-    height: 300px;
-    width: 300px;
-    background-image: url(images/one.jpeg);
-    background-position:top;
-    background-size: contain;
-    background-repeat: no-repeat;
+.four{
+    background: purple;
 }
+.five{
+    background: rgb(202, 103, 11);
+}
+.six{
+    background-color: crimson;
+}
+.project
 /*sevicess*/
 #service{
     background: rgb(247, 44, 44);
@@ -555,14 +549,27 @@ height: 80%;
     text-align: center;
 padding-top: 20px;
 padding-bottom: 20px;
+background: rgb(243, 243, 243);
 }
-.service-title h1::after{
+.service-title h1{
+    font-family:  'Wellfleet', cursive;
+}
+.service-title::after{
+    content: "what i provide";
+    background: rgb(7, 241, 151);
+    top: -5px;
+    position: relative;
+    font-family: 'Overpass',cursive;
+    
+}
+.service-title::before{
     content:"";
     position:absolute;
     height: 3px;
-transform: translate(-100px,30px);
+transform: translate(-100px,35px);
     width: 200px;
-    border-top: 3px solid rgb(255, 255, 255);
+   
+    border-top: 3px solid rgb(10, 255, 181);
 }
 
 .service-flex1{
@@ -591,29 +598,59 @@ transform: translate(-100px,30px);
 }
 /* contact section*/
 .contact-section{
-    height: 100%;
+    height: 80%;
     background-color: rgb(255, 0, 106);
 }
 .contact-title{
     text-align: center;
+    background: rgb(12, 226, 137);
+  
+  
+} 
+.contact-title h1{
+   padding-top:30px;
+padding-bottom: 30px;
+    font-family:  'Wellfleet', cursive;
 }
-.contact-submit{
-   display: flex;
+.contact-title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    background: white;
+    height: 3px;
+    transform: translate(-90px,65px);
+}
+.contact-title::after{
+    content: "get in touch";
+    background: rgb(248, 248, 248);
+    position: relative;
+    font-family: 'Overpass',cursive;
+top:-35px;
+}
+.contact-box{
+  display:flex;
+  flex-direction: row;
    margin-top: 30px;
 justify-content: center;
 }
-.contact-blocks{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.contact-detial{
+  
+ background: white;
+ position: relative;
+ left:200px;
+
 }
-.addres ,.number ,.email{
-    height: 200px;
-    width: 300px;
-    margin: 10px;
-    background: rgb(20, 147, 220);
+Address{
+    float:left;
+}
+.input-form{
+    position: relative;
+    right:200px;
 }
 .copywrite-section{
+    padding-bottom: 90px;
+    padding-top: 30px;
+    background: rgb(5, 241, 229);
     text-align:center;
     margin-top: 30px;
 }
