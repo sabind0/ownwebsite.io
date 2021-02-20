@@ -1,8 +1,9 @@
 
 $(document).ready(function(){
-    $('.button').click(function(){
-        $('nav').toggleClass('active')
-    });
+  $('.but i').click(function(){
+       $('.navcontent').toggleClass('aab');
+   });
+    
 var typed = new Typed(".typing", {
         strings: ["Student", "Frontend-Developer", "Graphic Designer", "Freelancer"],
         typeSpeed: 50,
@@ -11,14 +12,24 @@ var typed = new Typed(".typing", {
     });
 
     /*nav bar*/
-    $(window).scroll(function(){
-        // sticky navbar on scroll script
-        if(this.scrollY >100){
-            $('.here').addClass("sticky");
-        }else{
-            $('.here').removeClass("sticky");
-        }
-        
-        
-    });
- });
+  //  $(window).scroll(function(){
+  //      // sticky navbar on scroll script
+   //       if(this.scrollY >100){
+     //         $('.here').addClass("sticky");
+    //      }else{
+     //         $('.here').removeClass("sticky");
+     //     }
+    //       
+  //  });
+  
+});
+const swiper = new Swiper('.swiper-container', {
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  }
+});
+

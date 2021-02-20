@@ -1,148 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Amita&family=Assistant&family=Carme&family=Courgette&family=Finger+Paint&family=Lato:ital@1&family=Lemonada&family=Nixie+One&family=Overpass:wght@300&family=Pacifico&family=Wellfleet&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type:none;
+
 }
+
 html{
     scroll-behavior: smooth;
 }
 
+.nav-bar{
+   position:sticky;
+   top: 0px;
+   z-index: 1;
+  
+}
+.navcontent{
+  display:inline-block;  
+  background-color: aqua;
+  position: absolute;
+  width: 400px;
+  text-align: center;
+  height: 878px;
+  left: -400px;
+  transition: 0.6s;
+  font-size: 40px;
+}
 
+.navcontent .ul{
+    padding-top: 200px;
+}
 
+.but{
+  translate: -10px 780px;
+
+}
+.nav-bar .but i{
+   font-size: 30px;
+   margin-left: 50px;
+   margin-top: -20px;
+   z-index:1;
+   color: rgb(255, 255, 255);
+   background-color: aqua;
+  padding: 10px;
+
+}
 .nav-bar ul a{
-text-decoration: none;  
-font-weight: 800;
-color: rgb(255, 255, 255);  
-font-size: 25px;
-border-radius: 5px;
-padding: 5px 13px 5px 13px;
+
 font-family:  'Wellfleet', cursive;
-
+font-size: 23px;
 }
-.nav-bar ul a:hover{
-background-color: rgb(17, 235, 235);
+/*  for nav effect */
+.aab{
+left: 0px;
 }
-.nav-bar ul li{
-list-style-type: none;
-}
-.nav-bar ul{
-    display: flex;
-    justify-content: center;
-
-}
-.here.sticky{
-    position:sticky;
-    top:0px;
-    z-index: 1;
-    transition: 0.3s;
-
-}
-.here.sticky{
-    
-     background:rgba(4, 241, 142, 0.767);
-
-}
-
-.nav-bar ul li{
-
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-}
-.here.sticky{
-
-    margin-top: 10px;
-    margin-bottom: 0px;
-
-
-}
-.button{
-    display: none;
-}
-
-/*nav responsive only*/
-@media (max-width:600px){
-.nav-bar{
-z-index: 1;
-    top: -20px;
-    width: 100%;
-    position:absolute;
-    height: 110vh;
-    background:  rgb(31, 31, 31);
-    border-radius: 1 auto;
-transition: 0.5s;
-
-}
-
-
-.button{
-    z-index: 1;
-    border-radius: 20px;
-    display: block;
-    background: rgb(31, 31, 31);
-    height: 50px;
-   position: absolute;
-}
-.button i{
-   
-  padding-right: 20px;
-    margin-top: 10px;
-    font-size: 30px;
-    color: white;
-    margin-left: 20px;
-}
-.nav-bar{
-   left: -600px;
-   margin-top: -3vh;
-}
-.nav-bar.active{
-    left:0;
-}
-.nav-bar ul li{
-    margin: 20px auto;
-}
-.nav-bar ul  {
-    display:block;
-    text-align: center;
-    margin-top: 70px;
-}
-.nav-bar ul li{ 
-    display: block;
-    text-align:center;
-    margin-right: 20px;
-}
-}  
 /* nab bar responsive finised*/
 
 .home-image{
-margin-top: -50px;
+    margin-top: -50px;
     height: 100vh;
     background: linear-gradient(to bottom, rgba(6, 212, 219, 0.795), rgba(9, 226, 241, 0.527)), url(images/home-picture.jpg);
     background-position:left;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    
+  
+   
 }
-
-
-
 
  /*home text*/
 .text {
-    cursor: pointer;
-position: absolute;
+  cursor: pointer;
+  position: absolute;
   top: 40%;
   left: 45%;
   transform: translate(-50%, -50%);
+
+
  
  }
 .text h1{ 
- 
-
-    font-family: 'Assistant', sans-serif;
+   font-family: 'Assistant', sans-serif;
      font-size: 60px;
    
   
@@ -192,7 +135,6 @@ position: absolute;
  /*text finished now  i have to css this*/
   /*arrow down button*/
   .down-arrow{
-  
     position: absolute;
     top: 90%;
     left: 50%;
@@ -293,124 +235,74 @@ text-align:center;
     background-color: rgb(5, 238, 255);
 }
 .about-container-flex{
+background:url(images/wave.svg);
     display:flex;
+    padding: 100px;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    background-color: rgb(29, 28, 28);
-    height: 40%;
-    color:white;
- }
-.con2 img{
+background-repeat: no-repeat;
+background-size: cover;
+    color:rgb(0, 255, 149);
+}
+
+.picture img{
     height: 200px;
     border-radius: 50%;
 }
-.con2{
-    position:relative;
-    padding-left: 40px;
-    right:50px;
-    top:50px;
+.picture{
+ min-width: 300px;
+ margin-top: -30px;
     
 }
 
 .con3 h1{
- text-align: left;
- margin-top:100px;
+max-width: 700px;
+color: rgb(0, 0, 0);
+
    
 }
 
-.con3{
-margin-left: 100px;
-
-
+@media (max-width:800px){
+    .about-container-flex{
+        display: flex;
+        flex-direction: column;
+  
+    }
+    
 }
+
 /*resume
  section 
+
+
  */
-.resume{
-    margin-top: 30px;
-    display:flex;
-   
-   flex-direction: column;
-   height: 80%;
-  background: linear-gradient(rgb(0, 255, 85),rgb(0, 225, 255),white,rgba(40, 230, 15, 0.671));
-}
-.education-section{
-display:flex;
-justify-content: center;
-flex-direction: row;
-left:120px;
-
-
-
-}
-.education-title{
-    position:relative;
-    margin-right:70px;  
-}
-.education-title h1{
-   font-family:  'Wellfleet', cursive;
-}
-.education-title::before{
-    content:"";
-    position:absolute;
-    height: 3px;
-   left:-110px;
-   top:38px;
-    width: 300px;
-    border-top: 3px solid rgb(228, 228, 228);
-}
-.education-title::after{
-    content: "don't judge on basis of education";
-height: 4px;
-position: relative;
-
-right:70px;
-background-color: rgb(253, 253, 253);
-font-family: 'Overpass',cursive;
-}
-.school-name{
-    margin-top:8px;
-margin-right:450px;
-  
-}
-.school-name h2{
-    
-    font-family: 'Carme',cursive;
-}
-.school-name h3{
-    color:white;
-    font-family:'Overpass',cursive;
-}
-.color{
-    height: 30px;
-    background-color: white;
-    width: 100%;
-    margin-top:40px ;
-}
 /*skill section start*/
-
-.skills{
-    display:flex;
-    flex-direction: row;
-    margin-top: 50px;
-    justify-content: center;
-    position: relative;
-right:70px;
+.resume{
+    background-image:url(images/abs.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    height: 50%;
 }
 .skill-title{
-    margin-right: 200px;
-    position:relative; 
+    text-align: center;
+    
+  margin-top: 40px;
    
-  
 }
+
+
 .skill-title h1{
+
     font-family:  'Wellfleet', cursive;
-   color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
 }
 .skill-title::after{
     content:"what i know";
-  background: rgb(48, 243, 9);
+  background: rgb(236, 239, 240);
 position:relative;
    height: 3px;
    left:10px;
@@ -420,66 +312,82 @@ position:relative;
 .skill-title:before{
     content: "";
     position: absolute;
-   top:40px;
+    transform: translateX(-100px);
+margin-top: 40px;
   width: 200px;
   height: 3px;
-  left:-50px;
-   background-color: white;
+  background-color: rgb(201, 45, 45);
 }
-.skill-detail li{
-    list-style: none;
-    }
-    .skill-detail{
-     
-        cursor: pointer;
-        width: 20%;
-    }
-    .skill-detail .bar{
-    display:block;
-    background-color: ivory;
-     border: 1px solid green;
-     overflow: hidden;
-     
-     border-radius: 2px;
-    
-    }
-    .skill-detail .bar span{
-     
-      height:20px;
-       float: left;
-        
-    
-    }
-    .html{
-        width:80%;
-    background-color:rgb(0, 255, 106);
-    
-    
-    }
-    
-    .css{
-        width:70%;
-        background-color:rgb(48, 213, 235);
-    }
-    .js{
-        width: 30%;
-        background-color:rgb(0, 255, 213);
-    }
-    .git{
-        width:20%;
-        background-color:rgb(0, 162, 255);
-    }
-    
-    .seo{
-        width:40%;
-        background-color:rgb(0, 255, 157);
-    }
-    .gd{
-        width: 35%;
-        background-color:rgb(0, 255, 149);
-    }
+.set{
+
+display: flex;
+flex-direction: column;
 
 
+}
+.inside-skill{
+
+    margin-top: 40px;
+    height: 50%;
+  
+}
+.html i,.css i,  .js i ,.git i{
+    font-size: 100px;
+    color:rgb(226, 38, 38);
+}
+
+.first-row{
+  /* background-color: cornflowerblue;*/
+display: grid;
+grid-template-columns:repeat(2 ,1fr);
+justify-items: center;
+}
+.figma{
+  /* background-color: crimson;*/
+margin-left: 50px;
+}
+.photoshop{
+ /*  background-color: cyan;*/
+    margin-top: 20px;
+}
+
+.main-row{
+    justify-content: center;
+  /* background-color: orange;*/
+    margin-top: 40px;
+   display: flex;
+
+}
+.html{
+  margin: 20px;
+   /*  background-color: orchid;*/
+}
+
+.css{
+   /*  background-color: palegreen;*/
+}
+.js{
+    margin: 30px;
+    /* background-color: purple;*/
+}
+.git{
+    /* background-color: rgb(204, 238, 10);*/
+}
+.last-row{
+    justify-items: center;
+  /*   background-color: rgb(12, 226, 137);*/
+    display:grid;
+    grid-template-columns:repeat(2 ,1fr);
+ margin-top: 20px;
+}
+.seo{
+    margin-left: -150px;
+   /*  background-color: yellowgreen;*/
+}
+.gp{
+    margin-left: -400px;
+   /* background-color: tomato;*/
+}
 /*my works*/
 .work-title{
     background-color: rgb(255, 255, 255);
@@ -509,101 +417,131 @@ background-color: rgb(14, 234, 250);
     width: 200px;
     
 }
+.project-contianer .forimage{
+    height: 200px;
+}
 .project-contianer{
-    display: grid;
-    grid-template-columns:repeat(3,400px) ;
-    grid-template-rows: repeat(2,400px);
-    justify-content: center;
-    padding: 50px;
-    grid-gap: 50px 50px;
-    grid-auto-flow: row ;
-    text-align: center;
+    margin-left: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-items: center;
 }
-.one {
- 
-    background: red;
 
+.box{
+    display: flex;
+    
 }
-.two{
-    background: yellow;
+.thado{
+    background-color: aqua;
 }
-.three{
-    background: rgb(57, 212, 153);
+
+.tasro{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 0, 179);
 }
-.four{
-    background: purple;
+.b1{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(89, 0, 255);
 }
-.five{
-    background: rgb(202, 103, 11);
+.c1{
+    display: flex;
+    flex-direction:row;
+    background-color: rgb(255, 0, 0);
 }
-.six{
-    background-color: crimson;
+.box2{
+    display: flex;
+    
 }
-.project
+.thado2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(235, 147, 15);
+}
+.kjl{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 0, 149);
+}
+.b12{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(76, 0, 255);
+}
+.tasro2{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(0, 255, 85);
+}
+.c12{
+    background-color: blueviolet;
+    display: flex;
+   flex-direction: column;
+}
+.bb{
+    width: 300px;
+}
+.cc{
+    width: 300px;
+}
+.ff{
+    width: 300px;
+}
+.bb2{
+    width: 300px;
+}
+.cc2{
+    width: 300px;
+}
+.ff2{
+    width: 300px;
+}
 /*sevicess*/
-#service{
+.service{
     background: rgb(247, 44, 44);
-height: 80%;
+height: 50%;
 }
 .service-title{
     text-align: center;
-padding-top: 20px;
-padding-bottom: 20px;
-background: rgb(243, 243, 243);
-}
-.service-title h1{
-    font-family:  'Wellfleet', cursive;
-}
-.service-title::after{
-    content: "what i provide";
-    background: rgb(7, 241, 151);
-    top: -5px;
-    position: relative;
-    font-family: 'Overpass',cursive;
-    
-}
-.service-title::before{
-    content:"";
-    position:absolute;
-    height: 3px;
-transform: translate(-100px,35px);
-    width: 200px;
-   
-    border-top: 3px solid rgb(10, 255, 181);
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.service-flex1{
-    display:flex;
-    flex-direction: row;
-    padding-top: 20px;
-    justify-content: center;
+
+.service-title h1{
+
+    font-family:  'Wellfleet', cursive;
+   color: rgb(0, 0, 0);
 }
-.service1{
-    margin: 30px;
-    height: 200px;
-    width: 200px;
-    background: orange;
+.service-title::after{
+    content:"what can i do";
+  background: #05fa9c;
+position:relative;
+   height: 3px;
+  margin-left: -15px;
+   left:10px;
+   font-family: 'Overpass',cursive;
+  
 }
-.service2{
-    margin: 30px;
-    height: 200px;
-    width: 200px;
-    background: rgb(0, 204, 255);
-}
-.service3{
-    margin: 30px;
-    height: 200px;
-    width: 200px;
-    background: rgb(21, 255, 0);
+.service-title:before{
+    content: "";
+    position: absolute;
+    transform: translate(-90px,-7px);
+margin-top: 40px;
+  width: 200px;
+  height: 3px;
+  background-color: rgb(7, 223, 252);
 }
 /* contact section*/
 .contact-section{
-    height: 80%;
-    background-color: rgb(255, 0, 106);
+    
+   
 }
 .contact-title{
     text-align: center;
-    background: rgb(12, 226, 137);
+    background: rgb(43, 188, 245);
   
   
 } 
@@ -630,33 +568,46 @@ top:-35px;
 .contact-box{
   display:flex;
   flex-direction: row;
-   margin-top: 30px;
 justify-content: center;
 }
-.contact-detial{
-  
- background: white;
- position: relative;
- left:200px;
+input[type=text],input[type=email]{
+    font-family: FontAwesome;
+ font-size: 18px;
+ color:green;
+margin-top: 10px;
+line-height:  25px;
 
+   
 }
-Address{
-    float:left;
+label{
+    color: honeydew;
+    font-size: 25px;
 }
 .input-form{
-    position: relative;
-    right:200px;
+    margin-right:  200px;
+    margin-top: 50px;
 }
 .copywrite-section{
-    padding-bottom: 90px;
-    padding-top: 30px;
-    background: rgb(5, 241, 229);
+   
+   
+    
     text-align:center;
-    margin-top: 30px;
+   
 }
 .copywrite-section h1{
+   
     font-family: 'Finger Paint', cursive;
 }
-.copywrite-section h1 span{
-    color:rgb(255, 255, 255);
+
+.swiper-container {
+    width: 600px;
+    height: 300px;
+  }
+.simg{
+    height: 300px;
 }
+.divdiv{
+    display: flex;
+    flex-direction: row;
+}
+
