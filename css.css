@@ -21,12 +21,12 @@ html{
   
 }
 .navcontent{
-  display:inline-block;  
+  display:inline-block;
   background-color: aqua;
   position: absolute;
   width: 400px;
   text-align: center;
-  height: 878px;
+  height: 80px;
   left: -400px;
   transition: 0.6s;
   font-size: 40px;
@@ -538,7 +538,8 @@ margin-top: 40px;
 }
 /* contact section*/
 .contact-section{
-    
+    height:100%;
+    background-color: rgb(189, 189, 189);
    
 }
 .contact-title{
@@ -591,7 +592,7 @@ label{
 }
 .copywrite-section{
    
-   
+
     
     text-align:center;
    
