@@ -37,7 +37,9 @@ html{
 }
 
 .but{
-  translate: -10px 780px;
+position: absolute;
+margin-top: 400px;
+
 
 }
 .nav-bar .but i{
