@@ -38,7 +38,7 @@ html{
 
 .but{
 position: absolute;
-margin-top: 400px;
+margin-top: 30px;
 
 
 }
@@ -538,7 +538,7 @@ margin-top: 40px;
 }
 /* contact section*/
 .contact-section{
-    height:100%;
+    
     background-color: rgb(189, 189, 189);
    
 }
