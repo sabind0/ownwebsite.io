@@ -21,7 +21,6 @@ html{
   
 }
 .navcontent{
-  display:inline-block;
   background-color: rgb(0, 245, 245);
   position: absolute;
   width: 400px;
@@ -615,3 +614,10 @@ label{
     flex-direction: row;
 }
 
+.item img{
+    height: 300px;
+}
+#the{
+   width: 800px;
+   margin-left: 400px;
+}

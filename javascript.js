@@ -10,6 +10,22 @@ var typed = new Typed(".typing", {
         backSpeed: 50,
         loop: true,
     });
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:100,
+    nav:false,
+    responsive:{
+        0:{
+            items:2
+        },
+        700:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+});
 
     /*nav bar*/
   //  $(window).scroll(function(){
@@ -23,13 +39,3 @@ var typed = new Typed(".typing", {
   //  });
   
 });
-const swiper = new Swiper('.swiper-container', {
-  direction: 'horizontal',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  }
-});
-
