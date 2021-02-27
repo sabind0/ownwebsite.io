@@ -10,60 +10,112 @@
 
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-.nav-bar{
-   position:sticky;
-   top: 0px;
-   z-index: 1;
-  
-}
-.navcontent{
-  background-color: rgb(0, 245, 245);
-  position: absolute;
-  width: 400px;
-  text-align: center;
-  height: 850px;
-  left: -400px;
-  transition: 0.6s;
-  font-size: 40px;
-}
-
-.navcontent .ul{
-    padding-top: 200px;
-    background-color: beige;
-}
-
-.but{
-position: absolute;
-margin-top: 30px;
 
 
-}
-.nav-bar .but i{
-   font-size: 30px;
-   margin-left: 50px;
-   margin-top: -20px;
-   z-index:1;
-   color: rgb(255, 255, 255);
-   background-color: aqua;
-  padding: 10px;
 
-}
-.nav-bar ul a{
+.navcontent ul a{
 
 font-family:  'Wellfleet', cursive;
 font-size: 23px;
 }
-/*  for nav effect */
-.aab{
-left: 0px;
+.navcontent{
+   position:fixed;
+   top: 0px;
+z-index: 1;
+left: 300px;
+background-color: darkblue;
+padding-top: 5px;
+padding-bottom: 15px;
+border-radius: 20px;
+padding-left: 80px;
+padding-right: -80px;
 }
-/* nab bar responsive finised*/
+.navcontent ul{
+    display: flex;
+    text-align: center;
+   margin-left: 20px;
+}
+.navcontent ul li{
+    margin-top: 10px;
+   background-color: rgb(15, 250, 250);
+    margin-right: 70px;
+    border-radius: 5px;
+}
+.navcontent ul li:hover{
+    background-color: darkgray;
+ 
+    padding:2px;
+ 
+}
 
+.navcontent ul li a:hover{
+   
+}
+/*  for nav effect */
+
+
+.but{
+    display:none;
+}
+@media (max-width:800px){
+    .navcontent{
+       display: block;
+        background-color: blueviolet;
+        left:-500px;
+        width:450px;
+        text-align: center;
+          height:100vh;
+         position:fixed;
+        z-index:1;
+          transition: 0.6s;
+          font-size: 40px;
+         top: 70px;
+         margin-top: -70px;
+         transform: skewY(130deg);
+         border-radius: 50%;
+        }
+        
+        .navcontent .ul{
+            transform: skewY(-130deg);
+        display: block;
+        margin-top: 300px;
+        background-color: burlywood;
+        border-radius: 50%;
+      
+        }
+        
+        .but{
+      margin-top:40px;
+           float: right;
+        position:fixed;
+        top: 0px;
+       display: block;
+        z-index: 1;
+        background-color: aqua;
+        
+        
+        }
+        .but i{
+           font-size: 35px;
+           margin-left: 50px;
+           margin-top: 20px;
+           z-index:1;
+           color: rgb(255, 255, 255);
+          
+          padding: 10px;
+        
+        }
+      .aab{
+            left: 0px;
+            }
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
 .home-image{
+    z-index: -1;
     margin-top: -50px;
     height: 100vh;
     background: linear-gradient(to bottom, rgba(6, 212, 219, 0.795), rgba(9, 226, 241, 0.527)), url(images/home-picture.jpg);
@@ -77,6 +129,7 @@ left: 0px;
 
  /*home text*/
 .text {
+  
   cursor: pointer;
   position: absolute;
   top: 40%;
@@ -210,7 +263,7 @@ left: 0px;
     padding-top: 60px;
     letter-spacing: 2px;
    padding-bottom: 60px;
-    background-color: rgb(255, 255, 255);
+   background-color:#434852;
 }
 .con1 h1{
     font-family: 'Piedra', cursive;
@@ -237,27 +290,39 @@ text-align:center;
     background-color: rgb(5, 238, 255);
 }
 .about-container-flex{
-background:url(images/wave.svg);
-    display:flex;
-    padding: 100px;
+  
+display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
 background-repeat: no-repeat;
+background-position: center;
 background-size: cover;
-    color:rgb(0, 255, 149);
-}
+height: 50%;
 
+  
+ 
+}
+svg{
+    color: #ffa500;
+    margin-left: -300px;
+    position: absolute;
+    z-index: -1;
+    padding-top: -10px;
+}
 .picture img{
     height: 200px;
     border-radius: 50%;
 }
 .picture{
  min-width: 300px;
- margin-top: -30px;
+ margin-top: 100px;
+
     
 }
-
+.con3{
+   margin-top: 100px;
+}
 .con3 h1{
 max-width: 700px;
 color: rgb(0, 0, 0);
@@ -265,14 +330,7 @@ color: rgb(0, 0, 0);
    
 }
 
-@media (max-width:800px){
-    .about-container-flex{
-        display: flex;
-        flex-direction: column;
-  
-    }
-    
-}
+
 
 /*resume
  section 
@@ -281,7 +339,10 @@ color: rgb(0, 0, 0);
  */
 /*skill section start*/
 .resume{
-    background-image:url(images/abs.jpg);
+   
+}
+.inside-skill{
+    background-image:url(images/44.svg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-origin: border-box;
@@ -335,7 +396,7 @@ flex-direction: column;
 }
 .html i,.css i,  .js i ,.git i{
     font-size: 100px;
-    color:rgb(226, 38, 38);
+    color:#434852;
 }
 
 .first-row{
@@ -620,4 +681,5 @@ label{
 #the{
    width: 800px;
    margin-left: 400px;
+   z-index: 1;
 }
