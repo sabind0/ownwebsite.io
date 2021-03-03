@@ -5,7 +5,7 @@ $(document).ready(function(){
    });
     
 var typed = new Typed(".typing", {
-        strings: ["Student", "Frontend-Developer", "Graphic Designer", "Freelancer"],
+        strings: ["Student", "Frontend-Developer", "Graphic Designer"],
         typeSpeed: 50,
         backSpeed: 50,
         loop: true,
